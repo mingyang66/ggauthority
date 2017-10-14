@@ -1,4 +1,4 @@
-package ggauthority.v1.auth;
+package ggauthority.v1;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
