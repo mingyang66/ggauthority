@@ -34,7 +34,7 @@ public class UserController {
     @RequestMapping(value = "/list", method = {RequestMethod.GET, RequestMethod.POST})
     public User list(@RequestParam Long user_id) {
     		User user = new User();
-    		user.setId(4L);
+    		user.setId(5L);
     		user.setPassword("123");
     		user.setUserName("yaomy");
     		this.userService.saveUser(user);
