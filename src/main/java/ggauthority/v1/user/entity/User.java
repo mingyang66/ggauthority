@@ -3,14 +3,15 @@ package ggauthority.v1.user.entity;
 import java.io.Serializable;
 
 import org.springframework.stereotype.Component;
-
+/**
+ * 
+ * @author yaomy
+ *
+ */
 @Component
 public class User implements Serializable{
 
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = -1729604149803368916L;
 	private Long id;
 	private String userName;

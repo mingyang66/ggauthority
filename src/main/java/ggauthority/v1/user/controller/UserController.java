@@ -16,13 +16,9 @@ import ggauthority.v1.user.service.UserService;
 
 
 /**
- * @Description:TODO
- * @version 1.0
- * @since JDK1.7
+ * 
  * @author yaomy
- * @company xxxxxxxxxxxxxx
- * @copyright (c) 2017 yaomy Co'Ltd Inc. All rights reserved.
- * @date 2017年10月13日 下午4:23:36
+ *
  */
 @RestController
 @RequestMapping(value="users")
@@ -32,7 +28,7 @@ public class UserController {
 	private UserService userService;
 	
     @RequestMapping(value = "/list", method = {RequestMethod.GET, RequestMethod.POST})
-    public User list(@RequestParam Long user_id) {
+    public User list(@RequestParam Long userId) {
     		User user = new User();
     		user.setId(5L);
     		user.setPassword("123");
@@ -41,9 +37,9 @@ public class UserController {
         return user;
     }
     @RequestMapping(value = "/get_user/{user_id}", method = {RequestMethod.GET, RequestMethod.POST})
-    public Map<String, Object> get_user(@PathVariable Long user_id) {
+    public Map<String, Object> getUser(@PathVariable Long userId) {
     		Map<String, Object> map = new HashMap<String, Object>();
-    		map.put("user_id", user_id);
+    		map.put("user_id", userId);
         return map;
     }
 }
