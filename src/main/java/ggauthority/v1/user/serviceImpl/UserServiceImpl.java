@@ -6,7 +6,11 @@ import org.springframework.stereotype.Service;
 import ggauthority.v1.user.entity.User;
 import ggauthority.v1.user.service.UserService;
 import ggauthority.v1.user.userDao.UserDao;
-
+/**
+ * 
+ * @author yaomy
+ *
+ */
 @Service
 public class UserServiceImpl implements UserService{
 
